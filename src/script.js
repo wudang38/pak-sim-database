@@ -107,7 +107,7 @@ searchBtn.addEventListener("click", async () => {
 
     if (response.status === 402 || data.result === "Access Not Allowed. Please Contact Owner.") {
       showNotification("Paid ApiKey Required", "Using Free API Because You Didn't Have Paid ApiKey Access.", "error", 7000);
-      response = await fetch(`https://api.nexoracle.com/details/pak-sim-database-free?apikey=${free_api_key}&q=${query}`);
+      response = await fetch(`https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=gda&tv=r20260209&st=env&sj=3965447389272869`);
       data = await response.json();
     }
 
